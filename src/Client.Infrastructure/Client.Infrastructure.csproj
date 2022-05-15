@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>FSH.BlazorWebAssembly.Client.Infrastructure</RootNamespace>
-        <AssemblyName>FSH.BlazorWebAssembly.Client.Infrastructure</AssemblyName>
+        <RootNamespace>RewardsPlus.BlazorWebAssembly.Client.Infrastructure</RootNamespace>
+        <AssemblyName>RewardsPlus.BlazorWebAssembly.Client.Infrastructure</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

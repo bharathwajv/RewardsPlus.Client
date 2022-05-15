@@ -13,7 +13,7 @@ namespace RewardsPlus.BlazorWebAssembly.Client.Infrastructure;
 
 public static class Startup
 {
-    private const string ClientName = "FullStackHero.API";
+    private const string ClientName = "RewardsPlus";
 
     public static IServiceCollection AddClientServices(this IServiceCollection services, IConfiguration config) =>
         services

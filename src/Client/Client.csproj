@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>FSH.BlazorWebAssembly.Client</RootNamespace>
-        <AssemblyName>FSH.BlazorWebAssembly.Client</AssemblyName>
+        <RootNamespace>RewardsPlus.BlazorWebAssembly.Client</RootNamespace>
+        <AssemblyName>RewardsPlus.BlazorWebAssembly.Client</AssemblyName>
         <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
         <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>

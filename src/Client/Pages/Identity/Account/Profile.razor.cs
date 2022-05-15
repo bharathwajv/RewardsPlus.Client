@@ -35,16 +35,15 @@ public partial class Profile
         {
             _userId = user.GetUserId();
             _profileModel.Email = user.GetEmail() ?? string.Empty;
-            _profileModel.FirstName = user.GetFirstName() ?? string.Empty;
-            _profileModel.LastName = user.GetSurname() ?? string.Empty;
+            _profileModel.UserName = user.GetFirstName() ?? string.Empty;
             _profileModel.PhoneNumber = user.GetPhoneNumber();
             _imageUrl = string.IsNullOrEmpty(user?.GetImageUrl()) ? string.Empty : (Config[ConfigNames.ApiBaseUrl] + user?.GetImageUrl());
             if (_userId is not null) _profileModel.Id = _userId;
         }
 
-        if (_profileModel.FirstName?.Length > 0)
+        if (_profileModel.UserName?.Length > 0)
         {
-            _firstLetterOfName = _profileModel.FirstName.ToUpper().FirstOrDefault();
+            _firstLetterOfName = _profileModel.UserName.ToUpper().FirstOrDefault();
         }
     }
 
