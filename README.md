@@ -1,3 +1,7 @@
+// DROPED
+// FLUTTER SEEMS A BETTER OPTION 
+
+
 // initial analysis on deploy
 
 Blazor - 23mb download - 20s initial load time 
