@@ -47,8 +47,6 @@ public partial class Users
             deleteAction: string.Empty,
             fields: new()
             {
-                new(user => user.FirstName, L["First Name"]),
-                new(user => user.LastName, L["Last Name"]),
                 new(user => user.UserName, L["UserName"]),
                 new(user => user.Email, L["Email"]),
                 new(user => user.PhoneNumber, L["PhoneNumber"]),
@@ -59,8 +57,6 @@ public partial class Users
             loadDataFunc: async () => (await UsersClient.GetListAsync()).ToList(),
             searchFunc: (searchString, user) =>
                 string.IsNullOrWhiteSpace(searchString)
-                    || user.FirstName?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
-                    || user.LastName?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
                     || user.Email?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
                     || user.PhoneNumber?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true
                     || user.UserName?.Contains(searchString, StringComparison.OrdinalIgnoreCase) == true,
